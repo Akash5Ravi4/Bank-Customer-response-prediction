@@ -43,6 +43,7 @@ Test clients ranked by predicted chance of subscribing:
 
 Calling only the top 20% reaches about two thirds of all subscribers with 80% fewer calls. In that group, 37% of clients actually subscribed, compared with 11% overall.
 
+![Gains chart](gain_chart.png)
 
 ## What drives a "yes"
 Two methods were used on the final model.
@@ -56,6 +57,7 @@ The two rankings use different units, so compare the order, not the numbers.
 - **Contact type** (cellular vs. telephone) is the strongest client-level feature.
 - `previously_contacted` and `campaign` give smaller but real effects.
 
+![SHAP summary](shap_summary.png)
 
 ## Limitations
 - The economic columns change slowly over time, so they mostly tell the model **when** the call happened rather than **who** was called. The data covers 2008 to 2010, so the model may not transfer to a different economic period.
